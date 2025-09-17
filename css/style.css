@@ -1,0 +1,324 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-dark-wood: #7F6000;
+    --primary-wine-red: #8B0000;
+    --primary-dark-green: #2E8B57;
+    --secondary-beige: #F5F5DC;
+    --accent-gold: #DAA520;
+    --text-color: #333;
+    --light-text-color: #fff;
+}
+
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-beige);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-dark-wood);
+}
+
+a {
+    color: var(--primary-wine-red);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-gold);
+    text-decoration: underline;
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--primary-dark-wood);
+    color: var(--light-text-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--light-text-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-dark-wood);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 40px;
+}
+
+/* Header Logo */
+.logo {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+    padding: 10px 0;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://picsum.photos/seed/picsum/1600/800');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    color: var(--light-text-color);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero .slogan {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.opening-hours {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--accent-gold);
+}
+
+.opening-hours h2 {
+    color: var(--accent-gold);
+    margin-top: 0;
+}
+
+/* Teaser Section */
+.teaser {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* General Page Styles */
+.center-text {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-wine-red);
+    color: var(--light-text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--accent-gold);
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
+/* Menu Page */
+.menu-page h1 {
+    text-align: center;
+    color: var(--primary-wine-red);
+}
+
+.menu-download {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--primary-dark-wood);
+    padding-bottom: 20px;
+}
+
+.menu-category:last-of-type {
+    border-bottom: none;
+}
+
+.menu-category h2 {
+    color: var(--primary-dark-wood);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--accent-gold);
+    padding-left: 10px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.item-name {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.item-desc {
+    margin: 5px 20px 0 0;
+    color: #666;
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.item-price {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--primary-dark-green);
+}
+
+.item-price::before {
+    content: '€ ';
+}
+
+/* About Us Page */
+.about-page h1 {
+    text-align: center;
+    color: var(--primary-wine-red);
+}
+
+.about-image {
+    float: left;
+    margin: 0 20px 10px 0;
+    border-radius: 5px;
+    max-width: 300px;
+    border: 3px solid var(--primary-dark-wood);
+}
+
+.about-content p {
+    text-align: justify;
+}
+
+/* Contact Page */
+.contact-page h1 {
+    text-align: center;
+    color: var(--primary-wine-red);
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.contact-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-details h2, .contact-details h3 {
+    color: var(--primary-dark-wood);
+}
+
+.contact-map {
+    flex: 2;
+    min-width: 300px;
+}
+
+.contact-map iframe {
+    border: 3px solid var(--primary-dark-wood);
+    border-radius: 5px;
+}
+
+/* Imprint Page */
+.imprint-page h1 {
+    text-align: center;
+    color: var(--primary-wine-red);
+}
+
+.imprint-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.imprint-content h2, .imprint-content h3 {
+    color: var(--primary-dark-wood);
+}
+
+.imprint-content em {
+    font-weight: bold;
+    color: var(--primary-wine-red);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
