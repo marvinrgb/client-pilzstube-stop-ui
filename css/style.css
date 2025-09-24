@@ -93,6 +93,19 @@ footer {
     padding: 10px 0;
 }
 
+.burger-menu {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--light-text-color);
+    margin: 5px 0;
+}
+
 /* Hero Section */
 .hero {
     background-image: url('https://picsum.photos/seed/picsum/1600/800');
@@ -311,6 +324,22 @@ footer {
         float: none;
         display: block;
         margin: 0 auto 20px;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.nav-active {
+        display: block;
     }
 
     nav ul {
