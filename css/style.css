@@ -3,13 +3,13 @@
 
 /* CSS Variables */
 :root {
-    --primary-dark-wood: #7F6000;
-    --primary-wine-red: #8B0000;
-    --primary-dark-green: #2E8B57;
-    --secondary-beige: #F5F5DC;
-    --accent-gold: #DAA520;
-    --text-color: #333;
-    --light-text-color: #fff;
+    --primary-dark-wood: #990000;
+    --primary-wine-red: #ff4444;
+    --primary-dark-green: #ff4444;
+    --secondary-beige: #000000;
+    --accent-gold: #ff7777;
+    --text-color: #FFFFFF;
+    --light-text-color: #FFFFFF;
 }
 
 /* General Styles */
